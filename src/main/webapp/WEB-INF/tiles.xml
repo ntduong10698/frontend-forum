@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+    <!-- Base Define -->
+    <definition name="base.definition"
+                template="/WEB-INF/layouts/index.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header" value="/WEB-INF/basefragments/header.jsp" />
+        <put-attribute name="body" value=""/>
+        <put-attribute name="footer" value="/WEB-INF/basefragments/footer.jsp" />
+    </definition>
+
+    <!-- Home Page  -->
+    <definition name="home" extends="base.definition">
+        <put-attribute name="title" value="TinhTuong.com" />
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/home.jsp"/>
+    </definition>
+
+    <!-- Category1 Page  -->
+    <definition name="category1" extends="base.definition">
+        <put-attribute name="title" value="Category" />
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/category1.jsp"/>
+    </definition>
+
+    <!-- Category2 Page  -->
+    <definition name="category2" extends="base.definition">
+        <put-attribute name="title" value="Category" />
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/category2.jsp"/>
+    </definition>
+
+    <!-- Category1 Page  -->
+    <definition name="post" extends="base.definition">
+        <put-attribute name="title" value="Post" />
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/post.jsp"/>
+    </definition>
+
+</tiles-definitions>
