@@ -113,7 +113,7 @@
 
             <aside class="col-lg-4">
                 <div class="hot">
-                    <h3 class="title-aside">Sôi động trong tuần</h3>
+                    <h3 class="title-aside">Sôi động trong tháng</h3>
                     <div class="list-hot">
                         <a href="">
                             <img src="https://imgproxy3.cdnforo.com/AV41hub6UXMV0R0_lUeQ4KSHUb8d31ae-suY4jSIGeM/rs:fill:144:144:0/plain/http://data.tinhte.vn/data/attachment-files/2019/05/4661345_cover-anh-may-bay.jpg"

@@ -2,7 +2,7 @@
 <header id="header">
     <div class="container">
         <div class="header-right">
-            <a href="/" class="logo">
+            <a href="home" class="logo">
                 <img src="https://tinhte.vn/styles/uiflex/dimota/logo_small.png" alt="logo">
                 <span class="name header-active">Tinh Tường</span>
             </a>
@@ -46,7 +46,7 @@
                     </a>
                 </li>
             </ul>
-            <a href="/" id="click-login">Đăng nhập</a>
+            <a href="login" id="click-login">Đăng nhập</a>
         </div>
     </div>
 </header>
