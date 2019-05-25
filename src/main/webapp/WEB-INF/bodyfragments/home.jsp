@@ -1,10 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<script src="resources/js/ajax/ajax_home.js"></script>
 <div class="content" id="content">
     <div class="container">
         <div class="row">
             <div class="content-main col-lg-8">
                 <div class="tree-url row">
-                    <a class="url" href="">
+                    <a class="url" href="home">
                         <i class="fas fa-home"></i>
                         <span class="arrow">
                                 <span></span>
@@ -125,7 +126,7 @@
 
             <aside class="col-lg-4">
                 <div class="hot">
-                    <h3 class="title-aside">Sôi động trong tuần</h3>
+                    <h3 class="title-aside">Sôi động trong tháng</h3>
                     <div class="list-hot">
                         <a href="">
                             <img src="https://imgproxy3.cdnforo.com/AV41hub6UXMV0R0_lUeQ4KSHUb8d31ae-suY4jSIGeM/rs:fill:144:144:0/plain/http://data.tinhte.vn/data/attachment-files/2019/05/4661345_cover-anh-may-bay.jpg"
