@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <link rel="stylesheet" href="resources/css/post.css">
+<script src="resources/js/ajax/ajax_post.js"></script>
 <div class="content" id="content">
     <div class="container">
         <div class="row">
@@ -107,6 +108,14 @@
 
                 <div class="comment">
                     Comment Facebook
+                </div>
+                <%--END COMMENT FACEBOOK--%>
+
+                <div class="tagBlock">
+                    Tag:
+                    <ul class="tagList">
+                        <li><a href="search?name=huawei" class="tag"><span class="arrow"></span>huawei</a></li>
+                    </ul>
                 </div>
             </div>
             <!-- END_CONTENT_MAIN -->

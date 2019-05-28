@@ -32,10 +32,28 @@
         <put-attribute name="body" value="/WEB-INF/bodyfragments/category2.jsp"/>
     </definition>
 
-    <!-- Category1 Page  -->
+    <!-- Post Page  -->
     <definition name="post" extends="base.definition">
         <put-attribute name="title" value="Post" />
         <put-attribute name="body" value="/WEB-INF/bodyfragments/post.jsp"/>
+    </definition>
+
+    <!-- Login Page-->
+    <definition name="login" extends="base.definition">
+        <put-attribute name="title" value="Login" />
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/login.jsp"/>
+    </definition>
+
+    <!-- User Page-->
+    <definition name="user" extends="base.definition">
+        <put-attribute name="title" value="User" />
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/user.jsp"/>
+    </definition>
+
+    <!-- Register Page-->
+    <definition name="register" extends="base.definition">
+        <put-attribute name="title" value="Register" />
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/register.jsp"/>
     </definition>
 
 </tiles-definitions>

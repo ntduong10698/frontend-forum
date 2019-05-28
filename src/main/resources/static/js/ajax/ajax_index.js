@@ -1,3 +1,7 @@
+$(function () {
+    startSearch();
+})
+
 //CALL API MENU HEADER
 callAllMenu().then(result => {
     setMenuHeader(result);
@@ -23,7 +27,6 @@ async function callAllMenu() {
 //set menu header
 
 function setMenuHeader(menuList) {
-    console.log(menuList);
     let rs = "";
     menuList.map(menu => {
         rs += `<li class="header-category">
@@ -32,12 +35,12 @@ function setMenuHeader(menuList) {
         </a>
     </li>`
     });
-    rs += `<li class="menu">
-                        <a href="">
-                            Menu
-                            <i class="fas fa-bars"></i>
-                        </a>
-                    </li>`;
+    // rs += `<li class="menu">
+    //                     <a href="">
+    //                         Menu
+    //                         <i class="fas fa-bars"></i>
+    //                     </a>
+    //                 </li>`;
     $(".header-left ul.header-list-category").html(rs);
 }
 
@@ -114,9 +117,30 @@ function setTagNewCategoryLv2(idLv2) {
     })
 }
 
+setPostHotMonth();
 //Set hot post month
 function setPostHotMonth() {
-
+    $.ajax({
+        type: 'GET',
+        dataType: "json",
+        url: URL_API + "/v1/public/news/hot-by-month",
+        timeout: 30000,
+        success: function (result) {
+            let rs = '<h3 class="title-aside">Sôi động trong tháng</h3>';
+            result.map(data => {
+                rs += `<div class="list-hot">
+                        <a href="post?id=${data.id}">
+                            <img src=${data.image} alt=${data.title} class="rounded">
+                            <span class="title-hot">${data.title}</span>
+                        </a>
+                    </div>`
+            })
+            $('aside .hot').html(rs);
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+            console.log(errorThrown);
+        }
+    })
 }
 
 //END CALL API MENU HEADER
@@ -125,4 +149,15 @@ function setPostHotMonth() {
 function setTitleBar(category) {
     $(".title-bar h1").text(category.name);
     $(".title-bar .description-category").text(category.description);
+}
+
+function startSearch() {
+    $("#icon-search").click(function () {
+        window.location = `search?id=${$("#search").val()}`;
+    })
+    $("#search").keypress(function(event) {
+        if (event.keyCode == 13 || event.which == 13) {
+            window.location = `search?id=${$("#search").val()}`;
+        }
+    });
 }
