@@ -12,12 +12,12 @@
                                 <span></span>
                             </span>
                     </a>
-                    <a class="url" href="">
-                        Thông tin - Sự kiện
-                        <span class="arrow">
-                                <span></span>
-                            </span>
-                    </a>
+<%--                    <a class="url" href="">--%>
+<%--                        Thông tin - Sự kiện--%>
+<%--                        <span class="arrow">--%>
+<%--                                <span></span>--%>
+<%--                            </span>--%>
+<%--                    </a>--%>
                 </div>
                 <!-- END_TREE_URL -->
 
@@ -36,7 +36,7 @@
                     <table class="table-post">
                         <thead>
                         <tr>
-                            <th scope="col"></th>
+                            <th scope="col" id="click-reset"></th>
                             <th scope="col" class="w60">Tiêu Đề</th>
                             <th scope="col" class="text-right">Người Đăng</th>
                             <th scope="col" class="text-right" id="click-like">Số lượt thích <i

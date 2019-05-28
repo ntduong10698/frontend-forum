@@ -39,14 +39,21 @@
                         Khoa Học
                     </a>
                 </li>
-                <li class="menu">
-                    <a href="">
-                        Menu
-                        <i class="fas fa-bars"></i>
-                    </a>
-                </li>
+<%--                <li class="menu">--%>
+<%--                    <a href="">--%>
+<%--                        Menu--%>
+<%--                        <i class="fas fa-bars"></i>--%>
+<%--                    </a>--%>
+<%--                </li>--%>
             </ul>
             <a href="login" id="click-login">Đăng nhập</a>
+<%--            <a href="/" id="click-login">--%>
+<%--                <img src="https://photo2.tinhte.vn/data/avatars/l/843/843587.jpg?1441363761" alt="">--%>
+<%--                <span>hihi</span>--%>
+<%--            </a>--%>
+            <div class="exit not-view">
+                <i class="fas fa-sign-out-alt"></i>
+            </div>
         </div>
     </div>
 </header>

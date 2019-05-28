@@ -18,7 +18,7 @@ public class MainController {
         return "category1";
     }
 
-    @RequestMapping(value = {"/category2"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/category2","/search","/tag"}, method = RequestMethod.GET)
     public String category2(Model model) {
         return "category2";
     }
@@ -28,6 +28,19 @@ public class MainController {
         return "post";
     }
 
+    @RequestMapping(value = {"/login"}, method = RequestMethod.GET)
+    public String login(Model model) {
+        return "login";
+    }
 
+    @RequestMapping(value = {"/user"}, method = RequestMethod.GET)
+    public String user(Model model) {
+        return "user";
+    }
+
+    @RequestMapping(value = {"/register"}, method = RequestMethod.GET)
+    public String register(Model model) {
+        return "register";
+    }
 
 }

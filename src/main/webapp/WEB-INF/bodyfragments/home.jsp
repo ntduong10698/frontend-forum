@@ -11,12 +11,12 @@
                                 <span></span>
                             </span>
                     </a>
-                    <a class="url" href="">
-                        Thông tin - Sự kiện
-                        <span class="arrow">
-                                <span></span>
-                            </span>
-                    </a>
+<%--                    <a class="url" href="">--%>
+<%--                        Thông tin - Sự kiện--%>
+<%--                        <span class="arrow">--%>
+<%--                                <span></span>--%>
+<%--                            </span>--%>
+<%--                    </a>--%>
                 </div>
                 <!-- END_TREE_URL -->
 
