@@ -14,7 +14,7 @@
                     </div>
 
                 </div>
-                <form action="https://www.facebook.com/" class="form">
+                <form action="" class="form">
                     <div class="input-selection">
                         <dt>
                             <label for="">Tên: </label>
@@ -66,8 +66,6 @@
                         <dl>
                             <input class="input-1" id="password-v2" required title="Mật khẩu không khớp " type="password"
                                    placeholder="" value="" autofocus="autofocus">
-
-
                         </dl>
                     </div>
                     <div class="input-selection">
@@ -75,12 +73,8 @@
                             <label for="">Giới tính: </label>
                         </dt>
                         <dl id="gender">
-                            <input class="input-check-male" name="nam" type="radio" value="nam"> Nam <br>
-                            <input class="input-check-male" name="nam" type="radio" autofocus="autofocus" value="nu"> Nữ
-                            <br>
-                            <input class="input-check-male" name="nam" type="radio" autofocus="autofocus" value="default">
-                            (Không xác
-                            định) <br>
+                            <input class="input-check-male" name="nam" type="radio" value="1"> Nam <br>
+                            <input class="input-check-male" name="nam" type="radio" autofocus="autofocus" value="0"> Nữ <br>
                         </dl>
                     </div>
                     <div class="input-selection input-birthday">
@@ -124,14 +118,6 @@
                         </dt>
                         <dl>
                             <input id="job" class="input-1" type="text" placeholder="" autofocus="autofocus">
-                        </dl>
-                    </div>
-                    <div class="input-selection">
-                        <dt>
-                            <label for="">Mô tả: </label>
-                        </dt>
-                        <dl>
-                            <input id="infor" class="input-1" type="text" placeholder="" autofocus="autofocus">
                         </dl>
                     </div>
 

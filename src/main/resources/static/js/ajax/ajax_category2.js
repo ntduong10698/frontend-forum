@@ -1,14 +1,19 @@
 $(function () {
     var pathName = window.location.href.split('?id=');
-    var typeCategory = pathName[0].split("/")[3]; //http://.../.. get type Category
+    var arr = pathName[0].split("/");
+    var typeCategory = arr[arr.length - 1]; //http://.../.. get type Category
     var id = pathName[pathName.length - 1]; //get id category
+    console.log(arr);
     console.log(typeCategory);
     if ('search' === typeCategory.toLowerCase()) {
         callSearch(id);
     } else if('tag' === typeCategory.toLowerCase()){
         findTag(id);
-    } else {
+    } else if ('category2' == typeCategory.toLowerCase()) {
         findBigCategoryById(id);
+    } else {
+        $(".title-bar .description-category").text("Tìm kiếm các bài viết.");
+        $('.all-post').html("Tìm kiếm không trùng khớp.");
     }
 })
 
@@ -178,7 +183,7 @@ function setAllPostByBigCategory(listPost) {
     let rs = '';
     listPost.map(data => {
         rs += `<tr>
-                    <td scope="row"><img src=${data.appUser.avatarURL} alt=${data.appUser.name}></td>
+                    <td scope="row"><img src=${data.appUser.avatarURL == null?'http://jscoderetreat.com/img/why-js.png':data.appUser.avatarURL } alt="${data.appUser.name}"></td>
                     <td class="w60"><a href="post?id=${data.id}">${data.title}</a></td>
                     <td class="text-right">${data.appUser.name}</td>
                     <td class="text-right">${data.like}</td>

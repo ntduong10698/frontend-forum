@@ -1,0 +1,169 @@
+a:hover {
+    text-decoration: none;
+}
+
+.block-signin {
+    width: 100%;
+    height: auto;
+}
+
+.block-signin .signin.container {
+    padding: 0;
+    max-width: 1170px;
+    min-width: 300px;
+}
+
+.block-signin .signin.container .block-content-user {
+    width: 100%;
+}
+
+.block-signin .signin.container .block-content-user .body-content-user {
+    width: 95%;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.block-signin .signin.container .block-content-user .body-content-user .content-user-left {
+    width: 40%;
+    min-width: 180px;
+    margin-top: 15px;
+}
+
+.block-signin .signin.container .block-content-user .body-content-user .content-user-left .info-tk {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.block-signin .signin.container .block-content-user .body-content-user .content-user-left .info-tk .image-user {
+    margin-left: 2%;
+    width: 20%;
+}
+
+.block-signin .signin.container .block-content-user .body-content-user .content-user-left .info-tk .image-user img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.block-signin .signin.container .block-content-user .body-content-user .content-user-left .info-tk .name-user {
+    margin-left: 25px;
+    width: 75%;
+    height: 100%;
+    width: 100%;
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.block-signin .signin.container .block-content-user .body-content-user .content-user-left .info-personal {
+    width: 100%;
+}
+
+.block-signin .signin.container .block-content-user .body-content-user .content-user-left .info-personal .input-infor {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.block-signin .signin.container .block-content-user .body-content-user .content-user-left .info-personal .input-infor > dt > label {
+    margin-left: 2%;
+}
+
+.block-signin .signin.container .block-content-user .body-content-user .content-user-left .info-personal .input-infor > dl {
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.block-signin .signin.container .block-content-user .body-content-user .content-user-left .info-personal .input-infor > dl > input {
+    width: 90%;
+    margin-left: 2%;
+    border: 1px solid #dfdfdf;
+    height: 30px;
+}
+
+.block-signin .signin.container .block-content-user .body-content-user .content-user-left .info-personal .submit {
+    width: 90%;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.block-signin .signin.container .block-content-user .body-content-user .content-user-left .info-personal .submit .btn-submit {
+    padding: 5px 25px 5px 25px !important;
+}
+
+.block-signin .signin.container .block-content-user .body-content-user .content-user-left .info-personal .submit .btn-submit > p {
+    font-size: 22px;
+}
+
+.block-signin .signin.container .block-content-user .body-content-user .content-user-right {
+    width: 60%;
+    margin-top: 30px;
+}
+
+.block-signin .signin.container .block-content-user .body-content-user .content-user-right .block-status {
+    width: 95%;
+    margin: auto;
+}
+
+.block-signin .signin.container .block-content-user .body-content-user .content-user-right .block-status > h3 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.block-signin .signin.container .block-content-user .body-content-user .content-user-right .block-status > button {
+    float: right;
+    margin-bottom: 10px;
+}
+
+.block-signin .signin.container .block-content-user .body-content-user .content-user-right .block-status .status-input-infor {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.block-signin .signin.container .block-content-user .body-content-user .content-user-right .block-status .status-input-infor > dt {
+    width: 10%;
+    min-width: 70px;
+}
+
+.block-signin .signin.container .block-content-user .body-content-user .content-user-right .block-status .status-input-infor > dl {
+    width: 90%;
+}
+
+.block-signin .signin.container .block-content-user .body-content-user .content-user-right .block-status .status-input-infor > dl > input {
+    width: 100%;
+    padding: 5px 0px 5px 0px;
+}
+
+.block-signin .signin.container .block-content-user .body-content-user .content-user-right .block-status .status-input-infor > dl > select {
+    width: 100%;
+    padding: 5px 0px 5px 0px;
+    font-size: 14px;
+}
+
+.block-signin .signin.container .block-content-user .body-content-user .content-user-right .block-status #sample {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.block-signin .signin.container .block-content-user .body-content-user .content-user-right .block-status #sample > div {
+    width: 100% !important;
+    max-height: 160px !important;
+}
+
+.block-signin .signin.container .block-content-user .body-content-user .content-user-right .block-status #sample > div > div {
+    width: 100% !important;
+}
+
+#content {}
+
+#content .container{
+    background: #FFF;
+}

@@ -59,6 +59,7 @@ function login(username, password) {
             } else {
                 tokenLogin = data;
                 sessionStorage.setItem("tokenLogin", tokenLogin);
+                console.log(tokenLogin);
                 $.ajax({
                     type: 'GET',
                     dataType: "json",
@@ -68,6 +69,7 @@ function login(username, password) {
                     url: URL_API + "/v1/user/my-profile",
                     timeout: 30000,
                     success: function (result) {
+                        result.avatarURL = result.avatarURL == null ? 'http://jscoderetreat.com/img/why-js.png' : result.avatarURL;
                         sessionStorage.setItem("user", JSON.stringify(result));
                         setLoginHeader();
                         window.location= "home";
@@ -80,7 +82,7 @@ function login(username, password) {
         },
         error: function (jqXHR, textStatus, errorThrown) {
             errMess(jqXHR, textStatus, errorThrown);
-            alert("error");
+            // alert("error");
         }
     });
     return tooken;

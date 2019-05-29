@@ -14,6 +14,7 @@ body {
     background: var(--background-main);
     font-family: var(--font-main);
     font-size: var(--font-size-main);
+    min-width: 400px;
 }
 
 a {

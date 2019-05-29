@@ -21,7 +21,9 @@ function checkLike(id) {
                         $(".infor-post .like-post").addClass('color-red');
                     })
                 } else {
-                    clickLike(id);
+                    $(function () {
+                        clickLike(id);
+                    })
                 }
             },
             error: function (jqXHR, textStatus, errorThrown) {
@@ -51,7 +53,7 @@ function setPost(post) {
     $(".post .image-post").html(`<img src=${post.image} alt=${post.title}>
                             <div class="infor-post">
                             <div class="user-post">
-                                <img src=${post.appUser.avatarURL} alt=${post.appUser.name}>
+                                <img src=${post.appUser.avatarURL == null ? 'https://photo2.tinhte.vn/data/avatars/l/843/843587.jpg?1441363761' :post.appUser.avatarURL} alt=${post.appUser.name}>
                                 <span class="name-user-post">${post.appUser.name} <i class="fas fa-check-circle"></i></span>
                             </div>
                             <div class="like-post"><i class="fas fa-heart"></i></div>
@@ -70,6 +72,7 @@ function setTag(listTag) {
 
 function clickLike(id) {
     $(".like-post").click(function () {
+        console.log("click");
         let user = JSON.parse(sessionStorage.getItem('user'));
         $(".infor-post .like-post").addClass('color-red'); //set trước tránh delay sau đó kiểm tra lại set lại sau
         $.ajax({
