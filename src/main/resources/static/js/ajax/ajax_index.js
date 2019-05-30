@@ -130,7 +130,9 @@ function setPostHotMonth() {
             result.map(data => {
                 rs += `<div class="list-hot">
                         <a href="post?id=${data.id}">
-                            <img src=${data.image} alt=${data.title} class="rounded">
+                            <div class="img-hot">
+                                <img src=${data.image} alt=${data.title} class="rounded">
+                            </div>
                             <span class="title-hot">${data.title}</span>
                         </a>
                     </div>`
