@@ -91,7 +91,7 @@ function viewInfroUser() {
                                             <form method="POST" action="" enctype="multipart/form-data" id="btn-img-request">
                                                 <div>
                                                     <label for="change-avata" class="changeAvata">Change</label>
-                                                    <input type="file" class="form-control-file" name="file" multiple="multiple" id="change-avata">
+                                                    <input type="file" class="form-control-file" name="image" multiple="multiple" id="change-avata">
                                                 </div>
                                             </form>
                                             `)
@@ -215,7 +215,7 @@ function changeAvata() {
         uploadFile(formNewsData).then(data => {
             let user = JSON.parse(sessionStorage.getItem("user"));
             let tokenLogin = sessionStorage.getItem("tokenLogin");
-            user.avatarURL = data;
+            user.avatarURL = data.data.display_url;
             console.log(user);
             $.ajax({
                 type: 'PUT',
@@ -249,7 +249,7 @@ var uploadFile = async (file) => {
     let data;
     await $.ajax({
         type: "POST",
-        url: URL_API+"/v1/public/upload-file",
+        url: "https://api.imgbb.com/1/upload?key=de298703d3747242af0c357c04365c5",
         enctype: 'multipart/form-data',
         data: file,
         cache: false,
