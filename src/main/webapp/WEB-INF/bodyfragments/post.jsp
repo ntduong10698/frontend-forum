@@ -108,6 +108,8 @@
 
                 <div class="comment">
                     Comment Facebook
+
+                    <div class = "fb-comments" data-href = "" data-width = "100%" data-numposts = "5" > </div>
                 </div>
                 <%--END COMMENT FACEBOOK--%>
 

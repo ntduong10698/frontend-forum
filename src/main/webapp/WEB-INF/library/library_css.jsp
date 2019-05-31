@@ -19,3 +19,6 @@
 
 <link rel="stylesheet" href="resources/css/index.css">
 <script src="resources/js/index.js"></script>
+
+<meta property="fb:app_id" content="2232193916845997">
+<meta property="fb:admins" content="H/xAetT9RNt">

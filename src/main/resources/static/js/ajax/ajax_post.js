@@ -2,6 +2,7 @@ $(function () {
     var pathName = window.location.href.split('?id=');
     var typeCategory = pathName[0].split("/")[3]; //http://.../.. get type Category
     var id = pathName[pathName.length - 1]; //get id category
+    $(".fb-comments").attr("data-href",window.location.href);
     findPostById(id);
     checkLike(id);
 })

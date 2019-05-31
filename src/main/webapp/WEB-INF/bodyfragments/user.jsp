@@ -18,7 +18,6 @@
                                         <div class="image-user">
                                             <img src="https://photo2.tinhte.vn/data/avatars/l/2579/2579145.jpg?1558660366"
                                                  alt="">
-
                                         </div>
                                         <div class="name-user">
                                             hieu hieu
@@ -98,13 +97,19 @@
                                 <!-- end user left -->
                                 <div class="content-user-right col-lg-8 col-xs-12 col-md-8">
                                     <form action="" class="block-status">
-                                        <h3>Thêm bài viết</h3>
+                                        <h3>Bài viết</h3>
                                         <button class="btn btn-success" id="create-post"><i class="fa fa-indent" aria-hidden="true"></i> Thêm
                                             bài viết</button>
+                                        <dl>
+                                            <label for="" style="font-weight: bold; margin-right: 2px">Mã Bài Viết:</label>
+                                            <select id="listPostUser" style="width: 45px">
+                                                <option value="0">ID</option>
+                                            </select>
+                                        </dl>
                                         <div class="status-input-infor">
                                             <dt><label for="">Tiêu đề:</label></dt>
                                             <dl>
-                                                <input value="" pattern=".{0,50}" title="Tiêu đề không được quá 50 kí tự"
+                                                <input value="" pattern=".{0,500}" title="Tiêu đề không được quá 500 kí tự"
                                                        required class="input-1" type="text" placeholder="" value="" id="title-new-post">
                                             </dl>
                                         </div>
@@ -140,6 +145,10 @@
 												Some Initial Content was in this textarea
 											</textarea>
                                         </div>
+                                        <button class="btn btn-danger" id="delete-post" style="float:right"><i class="fas fa-trash-alt"></i> Xóa
+                                            bài viết</button>
+                                        <button class="btn btn-primary" id="update-post" style="float:left"><i class="fas fa-edit"></i> Sửa
+                                            bài viết</button>
                                     </form>
 
                                 </div>
